@@ -1,0 +1,117 @@
+*{
+    font-family:"Poppins", sans-serif ;
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+.header{
+    background-image: linear-gradient(rgba(54, 57, 74, 0.7), rgba(29, 40, 84, 0.7))
+    , url(img/camry/camry.jpg);
+    width:100%;
+    min-height:100vh;
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+.nav-link{
+    margin-right:30px;
+}
+.nav-link ul li {
+    list-style-type:none;
+}
+.nav-link ul li a{
+    text-decoration:none;
+    color:#E8E7DE;
+    padding:25px;
+
+}
+.nav-link ul li::after{
+    content:"";
+    background-color:lightcoral;
+    height:3px;
+    width:0%;
+    display:block;
+    margin:auto;
+    transition:width 0.3s ease;
+    -webkit-transition:width 0.3s ease;
+    -moz-transition:width 0.3s ease;
+    -ms-transition:width 0.3s ease;
+    -o-transition:width 0.3s ease;
+}
+.nav-link ul li:hover::after{
+    width:50%;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+nav .nav-link ul li{
+  display:inline-block;
+}
+nav .nav-logo img{
+    width:3.5vw;
+}
+nav .nav-logo{
+    margin-left:2%;
+    margin-top:2%;
+}
+
+
+.text-box{
+    margin-top:30vh;
+    text-align:center;
+}
+.text-box h1{
+    font-size:40px;
+    color:#fff;
+}
+.text-box p{
+    font-size:20px;
+    color:#cac1c1;
+}
+
+/* Car brand */
+.car-brand{
+    margin-top:5vh;
+
+}
+.car-brand h2{
+    text-align: center;
+    font-size:40px;
+}
+.brand img{
+    
+}
+.brand{
+  
+}
+.brand-list{
+   display:flex;
+   justify-content:space-around;
+   background-color: rgb(136, 131, 131);
+   border-radius: 50px;
+   -webkit-border-radius: 50px;
+   -moz-border-radius: 50px;
+   -ms-border-radius: 50px;
+   -o-border-radius: 50px;
+}
+
+/*---------------car----------------*/
+.car div{
+    border:1px solid black;
+    width:200px;
+    height:200px;
+    background-color:lightcoral;
+    flex: 0 1 600px;
+    flex-flow: column wrap;
+   
+}
+.car{
+    display:flex;
+    justify-content:space-around;
+}
+body{
+    margin-bottom:1000px;
+}
